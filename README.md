@@ -10,12 +10,12 @@
 项目解构：
     - public 
         - index.html // 首页
-    - component
-        - main  // 首页
-        - chat  // 聊天页面
-        - chat_list  // 聊天列表
-        - address_list  // 通讯录
-        - user
     - src
+        - component
+            - main  // 首页
+            - chat  // 聊天页面
+            - chat_list  // 聊天列表
+            - address_list  // 通讯录
+            - user
         - app.js   
         - index.js // 入口文件

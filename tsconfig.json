@@ -1,0 +1,13 @@
+{
+    "include": [
+        "src",
+    ],
+    "compilerOptions": {
+        "jsx": "react", // 支持jsx语法
+        "module": "es6",
+        "allowSyntheticDefaultImports": true // 支持默认导入模块
+    },
+    "exclude": [
+        "./node_modules"
+    ]
+}
