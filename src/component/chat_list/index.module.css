@@ -1,0 +1,10 @@
+.main {
+  flex-grow: 21;
+  background-color: #80eb4e;
+  display: flex;
+  flex-direction: column;
+}
+.section {
+  overflow-y: auto;
+  flex: 1;
+}

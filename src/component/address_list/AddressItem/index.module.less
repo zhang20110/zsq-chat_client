@@ -1,0 +1,27 @@
+@lineHeight: 50px;
+@height: 44px;
+.wrap {
+    height: @lineHeight;
+    margin: 10px;
+}
+.left {
+    display: inline-block;
+    height: 100%;
+    width: @height;
+    padding: calc((@lineHeight - @height) / 2) 0;
+    vertical-align: top;
+    img {
+        width: @height;
+        height: @height;
+        border-radius: 50%;
+        object-fit: fill;
+    }
+}
+.right {
+    @marginLeft: 10px;
+    display: inline-block;
+    margin-left: @marginLeft;
+    height: 100%;
+    width: calc(100% - @height - @marginLeft);
+    line-height: @lineHeight;
+}

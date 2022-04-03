@@ -1,7 +1,10 @@
 #main {
+  display: flex;
+  flex-direction: column;
   height: 85%;
   width: 375px;
   border-radius: 10px;
+  overflow: hidden;
   background-color: aqua;
   margin-right: 8px;
 }

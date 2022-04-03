@@ -1,0 +1,31 @@
+.wrapper {
+    position: relative;
+    box-sizing: content-box;
+    padding: 5px;
+    display: flex;
+}
+@height: 20px;
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    vertical-align: middle;
+    line-height: @height; // 每一行的高度  使光标居中
+    border-radius: 5px;
+}
+.right {
+    width: 80px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.testHeight {
+    position: absolute;
+    min-height: @height;
+    line-height: @height; // 每一行的高度
+    max-height: 80px;
+    opacity: 0;
+}

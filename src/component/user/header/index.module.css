@@ -1,0 +1,42 @@
+.top {
+  position: relative;
+  height: 110px;
+  background-image: linear-gradient(to right, #1b83d0, #f0b5a7);
+}
+.top img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 90px / 2);
+  bottom: -20px;
+}
+.name {
+  margin-bottom: 10px;
+  margin-top: calc(20px + 10px);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+.bottom {
+  display: flex;
+  font-size: 13px;
+}
+.address {
+  padding-right: 7px;
+  border-right: 1px solid #ccc;
+  flex: 1;
+  text-align: right;
+}
+.address span {
+  vertical-align: top;
+  margin-left: 4px;
+}
+.state {
+  padding-left: 7px;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 5px;
+}

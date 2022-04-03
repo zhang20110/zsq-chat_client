@@ -1,0 +1,19 @@
+@height: 40px;
+@width: 40px;
+.header {
+    height: @height;
+    padding: 0 ;
+    display: grid;
+    grid-template-columns: @width auto;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+    // svg {
+    //     width: 40px;
+    // }
+}
+.title {
+    justify-self: center;
+    margin-left: -@width;
+}

@@ -1,0 +1,45 @@
+@margin: 20px;
+.top {
+    position: relative;
+    height: 110px;
+    background-image: linear-gradient(to right, rgb(27, 131, 208), rgb(240, 181, 167));
+    img {
+        @height: 90px;
+        height: @height;
+        width: @height;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - @height / 2);
+        bottom: -@margin;
+    }
+}
+.name{
+    margin-bottom: 10px;
+    margin-top: calc(@margin + 10px);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+.bottom {
+    display: flex;
+    font-size: 13px;
+}
+@padding: 7px;
+.address {
+    padding-right: @padding;
+    border-right: 1px solid #ccc;
+    flex: 1;
+    text-align: right;
+    span {
+        vertical-align: top;
+        margin-left: 4px;
+    }
+}
+.state {
+    padding-left:@padding;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+}
