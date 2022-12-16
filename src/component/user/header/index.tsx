@@ -42,7 +42,7 @@ export default function Header(props) {
             <div className={styles.top}>
                 {/* 首次加载时 还没获取到headPorUrl时 不加载图片 */}
                 {
-                    headPorUrl && <img src={'/api/img/' + headPorUrl} className={styles.img} alt="头像" />
+                    headPorUrl && <img src={'/api/img/' + headPorUrl} className={styles.img} alt="点击更换头像" />
                 }
                 <input onChange={editPic} type="file" accept="image/*" className={styles.file}/>
             </div>

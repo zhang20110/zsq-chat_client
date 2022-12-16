@@ -16,10 +16,11 @@ export default function Register() {
                 alert('用户名已存在');
             }
             console.log(err);
+            return cancel;
         }).finally(() => {
             setIsLoading(false);
+            return cancel;
         })
-        return cancel;
     }
     return (
         <LogAndRegUI loading={isLoading} myCallback={register} imgs={imgs} title="注册" to="/login" toMsg="登陆"/>
