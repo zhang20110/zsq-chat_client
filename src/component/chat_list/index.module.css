@@ -1,6 +1,5 @@
 .main {
   flex-grow: 21;
-  background-color: #80eb4e;
   display: flex;
   flex-direction: column;
 }

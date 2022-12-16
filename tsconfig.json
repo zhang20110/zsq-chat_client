@@ -4,9 +4,9 @@
     ],
     "compilerOptions": {
         "jsx": "react", // 支持jsx语法
-        "module": "es6",
+        "module": "es2020",
         "allowSyntheticDefaultImports": true, // 支持默认导入模块
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
     },
     "exclude": [
         "./node_modules"

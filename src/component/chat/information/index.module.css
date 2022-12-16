@@ -20,12 +20,29 @@
   height: 40px;
 }
 .right {
-  background-color: red;
-  margin: 0 44px;
-  border-radius: 4px;
-  padding: 8px;
-  font-size: 14px;
+  padding-top: 0;
+  margin: 0 40px;
+  display: flex;
+  align-items: flex-end;
 }
-.right img {
+.right .text {
+  background-color: #7883ff;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+}
+.right .text img {
   width: 100%;
+}
+.right .status {
+  flex-shrink: 0;
+  color: #1eb01e;
+  font-size: 10px;
+  margin: 0 4px;
+}
+.rightR {
+  justify-content: flex-end;
+}
+.orderR {
+  order: -1;
 }

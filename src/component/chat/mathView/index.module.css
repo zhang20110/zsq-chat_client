@@ -1,0 +1,65 @@
+.wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 55%;
+  margin: auto;
+  background-color: white;
+}
+.wrap .top {
+  height: 34px;
+  padding: 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .top .title {
+  display: flex;
+  align-items: center;
+}
+.wrap .top svg {
+  cursor: pointer;
+}
+.wrap .top svg:hover {
+  fill: rgba(0, 0, 0, 0.826);
+}
+.wrap .section {
+  display: flex;
+  height: calc(100% - 34px - 40px);
+}
+.wrap .section .textarea {
+  outline: none;
+  resize: none;
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+}
+.wrap .section .right {
+  flex: 1;
+  margin-left: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.wrap .bottom {
+  height: 40px;
+  padding: 10px 7px;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrap .bottom .btn {
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 0 15px;
+  height: 27px;
+  background-color: aqua;
+}
+.wrap .bottom .btn:hover {
+  cursor: pointer;
+  background-color: #14dede;
+}

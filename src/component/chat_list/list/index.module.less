@@ -1,10 +1,10 @@
 .list {
-    @heght: 65px;
+    @heght: 60px;
     height: @heght;
     margin-bottom: 10px;
     width: 100%;
     display: flex;
-    background-color: rgb(243, 81, 6);
+    background-color: white;
     position: relative;
     .hidden {
         position: absolute;
@@ -17,47 +17,52 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex: 1;
         img {
             border-radius: 50%;
-            height:@heght - 10px;
-            width: @heght - 10px;
+            height:@heght - 12px;
+            width: @heght - 12px;
         }
     }
     .middle {
+        // border-bottom: 1px solid rgba(204, 204, 204, 0.79);
         width: 62%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         .name {
             font-weight: 600;
+            // color: white;
         }
         .information {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            color: white;
+            // color: white;
             font-size: 13px;
         }
     }
     .right {
+        // border-bottom: 1px solid rgba(204, 204, 204, 0.79);
         @height: 7px;
         .middle();
         width: 20%;
         align-items: flex-end;
         margin-right: 10px;
         .time {
-            color: white;
+            color: rgb(177, 187, 189);
             font-size: @height + 3px;
         }
         .count {
-            width: @height;
-            height: @height;
+            // width: @height;
+            // height: @height;
             line-height: @height;
             font-size: @height;
             text-align: center;
             border-radius: 50%;
-            background-color: red;
-            padding: 4px;
+            background-color: white;
+            padding: 5px;
+            color: red;
             box-sizing: content-box;
         }
     }

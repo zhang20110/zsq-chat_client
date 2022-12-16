@@ -5,6 +5,10 @@ declare const styles: {
   readonly "left": string;
   readonly "headPortrait": string;
   readonly "right": string;
+  readonly "text": string;
+  readonly "status": string;
+  readonly "rightR": string;
+  readonly "orderR": string;
 };
 export = styles;
 

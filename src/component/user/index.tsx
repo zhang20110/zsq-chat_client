@@ -1,22 +1,39 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import Http from "../../http";
 import Footer from "../footer";
 import Header from "./header";
 import styles from "./index.module.css"
 import Item from "./item";
 
 export default function User() {
-    const headPortrait = "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96f0a05789384c07afc8a5eed9b7bffc~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp?";
-    const name = '毛泽东';
-    const address = '南京市, 江苏省';
-    const state = '精进的要义是不急而速';
-    const data = {headPortrait, name, address, state};
+    const [data, setData] = useState({});
+    // 获取用户基本信息
+    useEffect(() => {
+        const {promise, cancel} = Http('get', 'getSelfInfo');
+        promise.then(res => {
+            setData(res.data);
+        }).catch(err => {
+            console.log('user err: ', err.response);
+        })
+        return cancel;
+    }, []);
+    const updateUserInfo = useCallback((data: {}) => {
+        const {promise} = Http('post', 'updateUserInfo', data);
+        promise.then(res => {
+            setData(res.data);
+        }).catch(err => {
+            console.log('user updateUserInfo err: ', err);
+            alert(err.response.data.msg);
+        })
+    }, []);
     return (
         <div className={styles.wrap}>
-            <Header {...data}/>
+            <Header {...data} updateUserInfo={updateUserInfo} updateData={(data) => 
+                setData(pre => ({...pre, ...data}))}/>
             <div className={styles.section}>
-                <Item title="设置" href="setting"/>
-                <Item title="设置" href="setting"/>
-                <Item title="设置" href="setting"/>
+                <Item title="添加好友" href="sendFriReq" icon="icon-wodehaoyou"/>
+                <Item title="好友申请" href="sendFriReply" icon="icon-jiahaoyou"/>
+                <Item title="新朋友" href="newFriend" icon="icon-xinpengyou"/>
             </div>
             <Footer />
         </div>

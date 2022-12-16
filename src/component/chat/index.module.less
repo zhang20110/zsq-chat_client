@@ -1,9 +1,36 @@
 .wrapper {
     height: 100%;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    .noMessage {
+        display: flex;
+        height: 21px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+        .line {
+            border-bottom: 1px solid #ccc;
+            flex: 1;
+        }
+        .title {
+            padding: 0 15px;
+            color: #ccc;
+            font-size: 9px;
+        }
+    }
     .section {
         flex: 1;
+        overflow-y: auto;
+        position: relative;
+        padding-right: 10px;
+        scrollbar-width: none;
+        /* firefox */
+        -ms-overflow-style: none;
+        /* IE 10+ */
+        &::-webkit-scrollbar {
+            display: none;
+            /* Chrome Safari */
+        }
     }
 }

@@ -8,9 +8,6 @@ body,
 * {
   box-sizing: border-box;
 }
-html {
-  padding: 10px 0;
-}
 .icon {
   width: 1.5em;
   height: 1.5em;

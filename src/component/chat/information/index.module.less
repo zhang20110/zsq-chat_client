@@ -22,13 +22,29 @@
     height: @height;
 }
 .right {
-    // float: left;
-    background-color: red;
-    margin: 0 (@height + @padding);
-    border-radius: 4px;
-    padding: 8px;
-    font-size: 14px;
-    img {
-        width: 100%;
+    padding-top: 0;
+    margin: 0 @height;
+    display: flex;
+    align-items: flex-end;
+    .text {
+        background-color: rgb(120, 131, 255);
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 8px;
+        img {
+            width: 100%;
+        }
     }
+    .status {
+        flex-shrink: 0;
+        color: #1eb01e;;
+        font-size: 10px;
+        margin: 0 4px;
+    }
+}
+.rightR {
+    justify-content: flex-end;
+}
+.orderR {
+    order: -1;
 }

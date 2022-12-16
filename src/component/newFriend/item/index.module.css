@@ -1,0 +1,29 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.wrap img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.wrap .name {
+  flex: 1;
+  padding-left: 15px;
+}
+.wrap .btn {
+  border: none;
+  background-color: #62d80e;
+  padding: 8px;
+  border-radius: 6px;
+  color: aliceblue;
+  margin-right: 10px;
+}
+.wrap .btn:hover {
+  background-color: #069a12;
+  cursor: pointer;
+}
+.wrap .text {
+  color: #ccc;
+}

@@ -3,7 +3,7 @@
     position: relative;
     height: 110px;
     background-image: linear-gradient(to right, rgb(27, 131, 208), rgb(240, 181, 167));
-    img {
+    .img {
         @height: 90px;
         height: @height;
         width: @height;
@@ -11,6 +11,11 @@
         position: absolute;
         left: calc(50% - @height / 2);
         bottom: -@margin;
+    }
+    .file {
+        .img();
+        opacity: 0;
+        cursor: pointer;
     }
 }
 .name{
@@ -42,4 +47,13 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-right: 5px;
+}
+.input {
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    text-indent: 3px;
+    padding: 5px;
+    width: 75%;
+    margin-left: 7px;
 }

@@ -1,9 +1,9 @@
 .list {
-  height: 65px;
+  height: 60px;
   margin-bottom: 10px;
   width: 100%;
   display: flex;
-  background-color: #f35106;
+  background-color: white;
   position: relative;
 }
 .list .hidden {
@@ -17,11 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 .list .left img {
   border-radius: 50%;
-  height: 55px;
-  width: 55px;
+  height: 48px;
+  width: 48px;
 }
 .list .middle {
   width: 62%;
@@ -36,7 +37,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: white;
   font-size: 13px;
 }
 .list .right {
@@ -55,21 +55,19 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: white;
   font-size: 13px;
 }
 .list .right .time {
-  color: white;
+  color: #b1bbbd;
   font-size: 10px;
 }
 .list .right .count {
-  width: 7px;
-  height: 7px;
   line-height: 7px;
   font-size: 7px;
   text-align: center;
   border-radius: 50%;
-  background-color: red;
-  padding: 4px;
+  background-color: white;
+  padding: 5px;
+  color: red;
   box-sizing: content-box;
 }

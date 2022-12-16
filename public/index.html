@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!-- svg形式引入小图标 -->
-    <script src="//at.alicdn.com/t/font_3289088_6987tbjo38i.js"></script>
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!-- svg形式引入小图标 -->
+  <script src="//at.alicdn.com/t/font_3289088_n0u7e88jcsf.js"></script>
+  <!-- 引入mathJax -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML-full"></script>
+  <!-- 引入code渲染highlight -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/xcode.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- 引入favicon图标 -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+<script>
+  window.MathJax = {
+    "fast-preview": {
+      disabled: true,
+    },
+    AuthorInit: function () {
+      MathJax.Hub.Register.StartupHook('End', function () {
+        MathJax.Hub.processSectionDelay = 0;
+        console.log('加载成功');
+      })
+    }
+  }
+</script>
+
 </html>

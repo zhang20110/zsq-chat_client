@@ -1,0 +1,14 @@
+.wrap {
+  height: 100%;
+  width: 3px;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wrap .bar {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  background-color: #97b5af;
+}

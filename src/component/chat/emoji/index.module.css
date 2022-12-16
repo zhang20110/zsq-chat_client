@@ -1,0 +1,49 @@
+.wrap {
+  width: 213px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100%;
+  right: 9px;
+  transition: all 0.8s;
+  border-radius: 11px;
+  background-color: white;
+  box-sizing: content-box;
+  border: 1px solid #ccc;
+}
+.wrap .emojiWrap {
+  padding: 4px 6px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap .emojiWrap .emoji {
+  width: 25px;
+  height: 25px;
+}
+.wrap .bottom {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.wrap .bottom::-webkit-scrollbar {
+  display: none;
+}
+.wrap .bottom .title {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+}
+.wrap .bottom .active {
+  background-color: white;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
