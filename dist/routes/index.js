@@ -1,0 +1,37 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const router_1 = __importDefault(require("@koa/router"));
+const login_1 = __importDefault(require("../cintroller/login"));
+const register_1 = __importDefault(require("../cintroller/register"));
+const imgs_1 = __importDefault(require("../cintroller/imgs"));
+const chatList_1 = __importDefault(require("../cintroller/chatList"));
+const getMessage_1 = __importDefault(require("../cintroller/getMessage"));
+const getAllUsers_1 = __importDefault(require("../cintroller/getAllUsers"));
+const getUser_1 = __importDefault(require("../cintroller/getUser"));
+const getRequest_1 = __importDefault(require("../cintroller/getRequest"));
+const getReply_1 = __importDefault(require("../cintroller/getReply"));
+const getSelfInfo_1 = __importDefault(require("../cintroller/getSelfInfo"));
+const updateUserInfo_1 = __importDefault(require("../cintroller/updateUserInfo"));
+const updateHeadPorUrl_1 = __importDefault(require("../cintroller/updateHeadPorUrl"));
+const sendImgMessage_1 = __importDefault(require("../cintroller/sendImgMessage"));
+const getEmoji_1 = __importDefault(require("../cintroller/getEmoji"));
+const router = new router_1.default();
+router.post('/api/login', login_1.default);
+router.post('/api/register', register_1.default);
+router.post('/api/getMessage', getMessage_1.default);
+router.post('/api/getAllUsers', getAllUsers_1.default);
+router.post('/api/getUser', getUser_1.default);
+router.post('/api/updateUserInfo', updateUserInfo_1.default);
+router.post('/api/updateHeadPorUrl', updateHeadPorUrl_1.default);
+router.post('/api/sendImgMessage', sendImgMessage_1.default);
+router.get('/api/chatList', chatList_1.default);
+router.get('/api/getRequest', getRequest_1.default);
+router.get('/api/getReply', getReply_1.default);
+router.get('/api/getSelfInfo', getSelfInfo_1.default);
+router.get('/api/getEmoji', getEmoji_1.default);
+router.get('/api/img/:id', imgs_1.default);
+exports.default = router;
+//# sourceMappingURL=index.js.map
