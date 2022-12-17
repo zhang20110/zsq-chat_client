@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import http from "../../http";
 import LogAndRegUI from "../logAndRegUI";
 export default function Register() {
-    const imgs = 'https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96f0a05789384c07afc8a5eed9b7bffc~tplv-k3u1fbpfcp-zoom-crop-mark:1304:1304:1304:734.awebp';
+    const imgs = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVJTQinzCq46z_H8NqBwTgdkfmG18fApyw2chxBsGOQ9YNwEJjpJs&usqp=CAE&s';
     const history= useNavigate();
     const [isLoading, setIsLoading] = useState(false);
     const register = (data) => {
